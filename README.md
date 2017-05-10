@@ -1,15 +1,17 @@
-# Basic Template
+Basic template for creating vapor apps
+This configures and and adds postgres db
 
-A basic vapor template for starting a new Vapor web application. If you're using vapor toolbox, you can use: `vapor new --template=basic`
+Steps:
 
-## 📖 Documentation
+1. Add the following json to Config/secrets/postgresql.json
 
-Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for instructions on how to use this package.
+{
+    "host": "127.0.0.1",
+    "user": "username",
+    "password": "",
+    "database": "dbame",
+    "port": 5432
+}
 
-## 💧 Community
+2. Run `vapor xcode` to generate code project
 
-Join the welcoming community of fellow Vapor developers in [slack](http://vapor.team).
-
-## 🔧 Compatibility
-
-This package has been tested on macOS and Ubuntu.
